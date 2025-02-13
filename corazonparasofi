@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Sofi ❤️</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 2rem;
+        }
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            transform: rotate(-45deg);
+            animation: spin 2s linear infinite;
+        }
+        .heart:before, .heart:after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart:before {
+            top: -50px;
+            left: 0;
+        }
+        .heart:after {
+            left: 50px;
+            top: 0;
+        }
+        @keyframes spin {
+            0% { transform: rotate(-45deg); }
+            50% { transform: rotate(-15deg); }
+            100% { transform: rotate(-45deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <p>Sofi</p>
+</body>
+</html>
